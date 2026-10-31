@@ -2,4 +2,45 @@
 title: "Proposal"
 ---
 
-Your proposal go here.
+1.  Title: GDP impacted by Social media?!
+2. Team: Hazel, Lionel
+3. Description: this project mainly focuses on discovering the relationship between Social media and GDP growth, researching on whether the categories of social media post’s topics also reveal people’s perceptions about the economy.
+4. Research question: 
+Is there a relationship between GDP growth and the proportion of political posts on social media platforms (Instagram and Twitter) across U.S. states?
+Do the topics of social media posts reflect people's perceptions of economic conditions?
+How does the relationship between political social media activity and GDP growth vary across states?
+5. The reasons/inspirations behind choosing the topic:
+	Social media is becoming an essential part of modern city life and a significant contributor to economic growth. We hope to take a closer look at the relationship between economy and media growth; it can also be interesting to visualise media usage together with other GDP contributors so as to better understand the role social media plays in a country’s economy.
+6. one potential data set that can be used to answer the research questions
+URL: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/T39JBY
+[Human Flourishing Geographic Index](https://doi.org/10.7910/DVN/T39JBY)
+
+7. communication plan:
+Communication channel: Wechat + Email
+Response time: from 9 to 12 during the weekday
+Meeting time: Every Thursday 6-7pm
+
+8. Roles:
+Point of contact: Hazel
+Technical lead: Lionel
+Style lead: Hazel
+
+9. Conflict solution:
+Our group would clarify the task division before begin working to make sure everyone is happy with the plan;
+If we missed a deadline, we would share the responsibility to make up for and split the potential consequences; 
+	
+10. Implementation plan
+Week 8 weekend: Hazel & Lionel discuss and confirm the final research topic and subtopics to work on. (To check data availability and method practicality)
+Week 9 Mon-Thur: PM 2: Loading datasets into R-studio + Initial cleaning and data preparation
+Week 9 Fri-Sun: PM3: Case study
+Week 10 Mon-Thur: Data Visualisation
+Week 10: Fri-Sun: PM4: EDA
+Week 11: Mon-thur: Improve data visualisation & Data analysis 
+Week 11: Fri-Sun: Progress presentation
+Week 12: Mon-Thur: Organize Data analysis into coherent story
+Week 12: Fri-Sun: Initial presentation
+Week 13: Mon-Thur: Address issues reflected in the presentation
+Week 13: Fri-Sun: Wrap up the Report – complete the request in Deliverables; Double check the webpage presentation
+Week 14: Mon-Thur: Make presentation video & presentation slides.
+
+
