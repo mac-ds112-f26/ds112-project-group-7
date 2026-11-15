@@ -1,5 +1,96 @@
----
-title: "Case Study"
----
+**Case Study: Text Analysis of Trump's Tweets**
 
-Your case study go here.
+**Article Title: Text analysis of Trump's tweets confirms he writes only the (angrier) Android half**
+
+**Author:** David Robinson
+
+**Publication Date:** August 9, 2016
+
+**1. Introduction and Motivation**
+The article talks about the hypothesis that Donald Trump's tweets from Android and iPhone might have been written by different people. This observation led to the main research question which is “Were the Android and iPhone tweets written by different people?” More specifically, the author wanted to investigate whether Trump personally wrote the Android tweets while his campaign staff managed the iPhone tweets.
+
+**2. Data and Initial Exploration**
+
+- **Data Collection and Cleaning**
+  - The author collected tweets from Trump's Twitter account using the `twitteR` package in R.
+  - After filtering out other devices, the dataset contained 628 iPhone tweets and 762 Android tweets.
+
+- **Posting Time (Line Graph)**
+  - Compared the percentage of tweets posted at different hours of the day.
+  - Android tweets were more common in the morning, while iPhone tweets were more common in the afternoon and early evening.
+
+- **Manual Retweeting (Bar Chart)**
+  - Compared the number of tweets starting with quotation marks on each device.
+  - Around 210 Android tweets started with quotation marks, compared with only a few iPhone tweets.
+  - The author excluded these quoted tweets from later word analysis because they contained text written by other users.
+
+- **Pictures and Links (Bar Chart)**
+  - Compared how often tweets from each device contained pictures or links.
+  - iPhone tweets were 38 times as likely to contain a picture or link as Android tweets.
+
+- **Initial Findings**
+  - The two devices showed clear differences in posting times, retweeting habits, and the use of pictures and links.
+  - These differences provided initial evidence that Android and iPhone tweets might have been written by different people.
+
+**3. Developing the Story Through Deeper Analysis**
+Since the Data exploration seeks to test the hypothesis that the tweets by Trump sent from Android is written by himself whereas those from iphone are not, the deeper analysis focus on seeking for comparative patterns between the tweets from these two different sources to either approve or disapprove this hypothesis.
+
+**Step 1: There is indeed a significant difference between the Formatting of the two tweets from different sources. **
+- Higher number of retweets from Android tweets compared to iphone tweets
+- 38 times More pictures from iphone tweets than android tweets
+
+**Step 2: Content Analysis**
+The author started by comparing the word use pattern (frequency of words used) between the two tweet devices
+- Android tweets use Less tagged words
+- Android tweets use More “Emotionally charged words”
+
+**Step 3: Sentiment Analysis**
+- To make a more detailed investigation (“Quantify”) of the observation of “more emotionally charged words”, the author - carried out Sentiment analysis on the Content.
+- Categorize the words used into sentiment categories
+- Count the number of words from each different categories for both iphone and android tweets
+- Visualise the percentage increase of words contained under each category in Android tweets compared to that from iphone
+- Finding: Trump’s Android account uses about 40-80% more words related to disgust, sadness, fear, anger, and other “negative” sentiments than the iPhone account does. (The positive emotions weren’t different to a statistically significant extent).
+
+**Step 4: Closer analysis on the word use**
+- Inspired by the previous step, the author explored which words drove the difference in sentiment, they compared between - the number of words in the different categories.
+- Finding: it can be confirmed that lots of words annotated as negative sentiments are more common in Android tweets than iPhone tweets.
+
+**4. Visualization and Storytelling Techniques**
+
+**Visualization Choices**
+- Line graphs compare posting times between Android and iPhone.
+- Bar charts show differences in retweeting behavior, pictures and links, and word usage.
+- A plot with 95% confidence intervals shows sentiment differences and the uncertainty of the estimates.
+- Faceted bar charts highlight specific words associated with different emotions.
+
+**Logical Progression**
+- The author starts with simple comparisons of tweeting behavior before moving into more detailed word and sentiment analysis.
+- Each visualization builds on the previous findings and provides more evidence for the original hypothesis.This makes the story easy to follow without introducing complicated statistical analysis too early.
+
+**5. Conclusion and Limitations**
+
+**- Conclusion:**
+  Android tweets and iPhone tweets are likely to be created by different authors
+  Android tweets are most likely to be posted by Trump himself whereas the iPhone tweets are most likely to be posted by    his assistant
+  
+**- Limitation:**
+There are exception cases in which the posts from iPhone use words and punctuations similar to those from Android device.
+It is unclear whether these posts are tweeted by Trump himself or by another author imitating his tone.
+
+**6. What We Learned About Data Storytelling**
+
+**- Storytelling**
+Storytelling is a process of gradually developing and making extension from the originally proposed question to form a coherent and meaningful narration.
+It is important to consider the social significance of the data story telling
+Robinson connected his statistical findings to a broader human-interest story. Instead of ending with the observation that Android tweets were more negative, he raised questions about the possible involvement of campaign staff members in writing Trump's tweets. This transition from numerical patterns to human behavior made the analysis more engaging and meaningful. It demonstrates that data storytelling should encourage audiences to think beyond what the numbers directly show.
+One should be cautious in making overly determinative conclusions about the finding from the story telling; it is the author’s responsibility to identify other possible interpretations of the finding and potential gap of the methods used.
+
+**- Visualization:**
+The author examined posting times, retweet patterns, links, hashtags, word frequencies, and emotional characteristics. By connecting these findings, he developed a more comprehensive argument than he could have achieved through a single variable or visualization. This demonstrates how multiple visualizations can work together to support an overall narrative rather than simply presenting disconnected findings.
+After identifying a certain pattern from the reorganisation of the dataset or plotting the data down, it can be helpful to process the data using statistical techniques that enable the plot to present the pattern in the most effective way.
+For example, the author used log odds ration *(extra research:statistical measure that compares the odds of an event occurring in one group versus another, using a logarithmic scale. A positive value means the event is more likely in the first group, a negative value means it is more likely in the second group, and zero means the odds are equal.)* to present the difference in frequency of different word use between Android and iPhone tweets. This result in a graph with easily observable contrast between the word use habit between the two devices’ tweets.
+
+
+**7.Reference**
+Robinson, D. (2016, August 9). *Text analysis of Trump's tweets confirms he writes only the (angrier) Android half*. Variance Explained. https://varianceexplained.org/r/trump-tweets/
+
